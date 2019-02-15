@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Swift Documentation</title>
+</head>
+<body>
+  <!--Fixed Sidebar-->
+  <nav id="navbar">
+    <header><strong>Swift</strong></header>
+    <a href="#The_Basics" class="nav-link">The Basics</a>
+    <a href="#Constants_and_Variables" class="nav-link">Constants and Variables</a>
+    <a href="#Comments" class="nav-link">Comments</a>
+    <a href="#Semicolons" class="nav-link">Semicolons</a>
+    <a href="#Integers" class="nav-link">Integers</a>
+    <a href="#Floating-Point_Numbers" class="nav-link">Floating-Point Numbers</a>
+    <a href="#Type_Safety" class="nav-link">Type Safety</a>
+    <a href="#Numeric_Literals" class="nav-link">Numeric Literals</a>
+    <a href="#Numeric_Type_Conversion" class="nav-link">Numeric Type Conversion</a>
+  </nav>
+  <!--End Fixed Sidebar-->
+
+  <!--Main Page Content-->
+  <main id="main-doc">
+    <section id="The_Basics"class="main-section">
+      <header>The Basics</header>
+      <p>Swift is a new programming language for iOS, macOS, watchOS, and tvOS app development. Nonetheless, many parts of Swift will be familiar from your experience of developing in C and Objective-C.
+        
+        Swift provides its own versions of all fundamental C and Objective-C types, including <code>Int</code> for integers, <code>Double</code> and <code>Float</code> for floating-point values, <code>Bool</code> for Boolean values, and <code>String</code> for textual data. Swift also provides powerful versions of the three primary collection types, <code>Array</code>, <code>Set</code>, and <code>Dictionary</code>, as described in Collection Types.
+        
+        Like C, Swift uses variables to store and refer to values by an identifying name. Swift also makes extensive use of variables whose values can’t be changed. These are known as constants, and are much more powerful than constants in C. Constants are used throughout Swift to make code safer and clearer in intent when you work with values that don’t need to change.
+        
+        In addition to familiar types, Swift introduces advanced types not found in Objective-C, such as tuples. Tuples enable you to create and pass around groupings of values. You can use a tuple to return multiple values from a function as a single compound value.
+        
+        Swift also introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”. Using optionals is similar to using <code>nil</code> with pointers in Objective-C, but they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointers in Objective-C, they’re at the heart of many of Swift’s most powerful features.
+        
+        Swift is a type-safe language, which means the language helps you to be clear about the types of values your code can work with. If part of your code requires a String, type safety prevents you from passing it an Int by mistake. Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that requires a non-optional String. Type safety helps you catch and fix errors as early as possible in the development process.</p>
+    </section>
+    <section id="Constants_and_Variables" class="main-section">
+      <header>Constants and Variables</header>
+      <p>Constants and variables associate a name (such as <code>maximumNumberOfLoginAttempts</code> or <code>welcomeMessage</code>) with a value of a particular type (such as the number 10 or the string "Hello"). The value of a constant can’t be changed once it’s set, whereas a variable can be set to a different value in the future.</p>
+    </section>
+    <section id="Comments" class="main-section">
+      <header>Comments</header>
+      <p>Use comments to include nonexecutable text in your code, as a note or reminder to yourself. Comments are ignored by the Swift compiler when your code is compiled.
+        
+        Comments in Swift are very similar to comments in C. Single-line comments begin with two forward-slashes (//):<br><br>
+        
+              <code>// This is a comment.</code><br><br>
+        
+              Multiline comments start with a forward-slash followed by an asterisk (/*) and end with an asterisk followed by a forward-slash (*/):<br><br>
+        
+            <code>/* This is also a comment<br>
+              but is written over multiple lines. */</code><br><br>
+        
+        Unlike multiline comments in C, multiline comments in Swift can be nested inside other multiline comments. You write nested comments by starting a multiline comment block and then starting a second multiline comment within the first block. The second block is then closed, followed by the first block: <br><br>
+        
+            <code>/* This is the start of the first multiline comment.</code><br>
+              <code>/* This is the second, nested multiline comment. */</code><br>
+              <code>This is the end of the first multiline comment. */</code><br><br>
+        
+        Nested multiline comments enable you to comment out large blocks of code quickly and easily, even if the code already contains multiline comments.</p>
+    </section>
+    <section id="Semicolons" class="main-section">
+      <header>Semicolons</header>
+      <p>Unlike many other languages, Swift doesn’t require you to write a semicolon (;) after each statement in your code, although you can do so if you wish. However, semicolons are required if you want to write multiple separate statements on a single line.</p>
+    </section>
+    <section id="Integers" class="main-section">
+      <header>Integers</header>
+      <p>
+        Integers are whole numbers with no fractional component, such as 42 and -23. Integers are either signed (positive, zero, or negative)
+        or unsigned (positive or zero). Swift provides signed and unsigned integers in 8, 16, 32, and 64 bit forms. These integers follow a 
+        naming convention similar to C, in that an 8-bit unsigned integer is of type UInt8, and a 32-bit signed integer is of type Int32. 
+        Like all types in Swift, these integer types have capitalized names.
+      </p>
+      <p>
+        In most cases, you don’t need to pick a specific size of integer to use in your code. Swift provides an additional integer type, Int, 
+        which has the same size as the current platform’s native word size:
+      </p>
+      <ul>
+        <li>
+          On a 32-bit platform, Int is the same size as Int32.
+        </li>
+        <li>
+          On a 64-bit platform, Int is the same size as Int64.
+        </li>
+      </ul>
+      <p>
+        Unless you need to work with a specific size of integer, always use Int for integer values in your code. This aids code consistency
+        and interoperability. Even on 32-bit platforms, Int can store any value between -2,147,483,648 and 2,147,483,647, and is large 
+        enough for many integer ranges.
+      </p>
+    </section>
+    <section id="Floating-Point_Numbers" class="main-section">
+      <header>Floating-Point Numbers</header>
+      <p>
+        Floating-point numbers are numbers with a fractional component, such as 3.14159, 0.1, and -273.15.
+      </p>
+      <p>
+        Floating-point types can represent a much wider range of values than integer types, and can store numbers that are much larger or smaller than can be stored in an Int. Swift provides two signed floating-point number types:
+      </p>
+      <ul> 
+        <li>
+          Double represents a 64-bit floating-point number.        
+        </li>
+        <li>
+          Float represents a 32-bit floating-point number.        
+        </li>
+      </ul>      
+    </section>
+    <section id ="Type_Safety" class="main-section">
+      <header>Type Safety</header>
+      <p>
+        Swift is a type-safe language. A type safe language encourages you to be clear about the types of values your code can work with. If 
+        part of your code requires a <code>String</code>, you can’t pass it an <code>Int</code> by mistake.Because Swift is type safe, it 
+        performs type checks when compiling your code and flags any mismatched types as errors. This enables you to catch and fix errors as 
+        early as possible in the development process. Type-checking helps you avoid errors when you’re working with different types of 
+        values. However, this doesn’t mean that you have to specify the type of every constant and variable that you declare. If you don’t 
+        specify the type of value you need, Swift uses type inference to work out the appropriate type. Type inference enables a compiler to 
+        deduce the type of a particular expression automatically when it compiles your code, simply by examining the values you provide. 
+        Because of type inference, Swift requires far fewer type declarations than languages such as C or Objective-C. Constants and 
+        variables are still explicitly typed, but much of the work of specifying their type is done for you.
+      </p>
+    </section>
+    <section id="Numeric_Literals"class="main-section">
+      <header>Numeric Literals</header>
+      <p>
+        Integer literals can be written as:
+      </p>
+      <ul>
+        <li>
+          ulA decimal number, with no prefix
+        </li>
+        <li>     
+          A binary number, with a 0b prefix
+        </li>
+        <li>
+          An octal number, with a 0o prefix
+        </li>
+        <li>      
+          A hexadecimal number, with a 0x prefix
+        </li>
+      </ul>
+    </section>
+    <section id="Numeric_Type_Conversion" class="main-section">
+      <header>Numeric Type Conversion</header>
+      <p>
+        Use the Int type for all general-purpose integer constants and variables in your code, even if they’re known to be nonnegative. Using 
+        the default integer type in everyday situations means that integer constants and variables are immediately interoperable in your code 
+        and will match the inferred type for integer literal values. Use other integer types only when they’re specifically needed for the 
+        task at hand, because of explicitly sized data from an external source, or for performance, memory usage, or other necessary 
+        optimization. Using explicitly sized types in these situations helps to catch any accidental value overflows and implicitly documents 
+        the nature of the data being used.
+      </p>
+    </section>
+  </main>
+  <!--End Main Page Content-->    
+</body>
+</html>
