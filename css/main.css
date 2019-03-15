@@ -32,6 +32,9 @@ header {
   font-size: 225%;
   padding-left: 1.5%;
 }
+p {
+  text-indent: 16px;
+}
 code {
   color: green;
 }
