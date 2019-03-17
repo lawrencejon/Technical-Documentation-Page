@@ -23,7 +23,7 @@
 
   <!--Main Page Content-->
   <main id="main-doc">
-    <section id="The_Basics"class="main-section">
+    <div id="The_Basics" class="main-div">
       <header>The Basics</header>
       <p>Swift is a new programming language for iOS, macOS, watchOS, and tvOS app development. Nonetheless, many parts of Swift will be familiar from your experience of developing in C and Objective-C.
         
@@ -36,12 +36,12 @@
         Swift also introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”. Using optionals is similar to using <code>nil</code> with pointers in Objective-C, but they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointers in Objective-C, they’re at the heart of many of Swift’s most powerful features.
         
         Swift is a type-safe language, which means the language helps you to be clear about the types of values your code can work with. If part of your code requires a String, type safety prevents you from passing it an Int by mistake. Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that requires a non-optional String. Type safety helps you catch and fix errors as early as possible in the development process.</p>
-    </section>
-    <section id="Constants_and_Variables" class="main-section">
+    </div>
+    <div id="Constants_and_Variables" class="main-div">
       <header>Constants and Variables</header>
       <p>Constants and variables associate a name (such as <code>maximumNumberOfLoginAttempts</code> or <code>welcomeMessage</code>) with a value of a particular type (such as the number 10 or the string "Hello"). The value of a constant can’t be changed once it’s set, whereas a variable can be set to a different value in the future.</p>
-    </section>
-    <section id="Comments" class="main-section">
+    </div>
+    <div id="Comments" class="main-div">
       <header>Comments</header>
       <p>Use comments to include nonexecutable text in your code, as a note or reminder to yourself. Comments are ignored by the Swift compiler when your code is compiled.
         
@@ -61,12 +61,12 @@
               <code>This is the end of the first multiline comment. */</code><br><br>
         
         Nested multiline comments enable you to comment out large blocks of code quickly and easily, even if the code already contains multiline comments.</p>
-    </section>
-    <section id="Semicolons" class="main-section">
+    </div>
+    <div id="Semicolons" class="main-div">
       <header>Semicolons</header>
       <p>Unlike many other languages, Swift doesn’t require you to write a semicolon (;) after each statement in your code, although you can do so if you wish. However, semicolons are required if you want to write multiple separate statements on a single line.</p>
-    </section>
-    <section id="Integers" class="main-section">
+    </div>
+    <div id="Integers" class="main-div">
       <header>Integers</header>
       <p>
         Integers are whole numbers with no fractional component, such as 42 and -23. Integers are either signed (positive, zero, or negative)
@@ -91,8 +91,8 @@
         and interoperability. Even on 32-bit platforms, Int can store any value between -2,147,483,648 and 2,147,483,647, and is large 
         enough for many integer ranges.
       </p>
-    </section>
-    <section id="Floating-Point_Numbers" class="main-section">
+    </div>
+    <div id="Floating-Point_Numbers" class="main-div">
       <header>Floating-Point Numbers</header>
       <p>
         Floating-point numbers are numbers with a fractional component, such as 3.14159, 0.1, and -273.15.
@@ -108,8 +108,8 @@
           Float represents a 32-bit floating-point number.        
         </li>
       </ul>      
-    </section>
-    <section id ="Type_Safety" class="main-section">
+    </div>
+    <div id ="Type_Safety" class="main-div">
       <header>Type Safety</header>
       <p>
         Swift is a type-safe language. A type safe language encourages you to be clear about the types of values your code can work with. If 
@@ -122,8 +122,8 @@
         Because of type inference, Swift requires far fewer type declarations than languages such as C or Objective-C. Constants and 
         variables are still explicitly typed, but much of the work of specifying their type is done for you.
       </p>
-    </section>
-    <section id="Numeric_Literals"class="main-section">
+    </div>
+    <div id="Numeric_Literals" class="main-div">
       <header>Numeric Literals</header>
       <p>
         Integer literals can be written as:
@@ -142,8 +142,8 @@
           A hexadecimal number, with a 0x prefix
         </li>
       </ul>
-    </section>
-    <section id="Numeric_Type_Conversion" class="main-section">
+    </div>
+    <div id="Numeric_Type_Conversion" class="main-div">
       <header>Numeric Type Conversion</header>
       <p>
         Use the Int type for all general-purpose integer constants and variables in your code, even if they’re known to be nonnegative. Using 
@@ -153,7 +153,7 @@
         optimization. Using explicitly sized types in these situations helps to catch any accidental value overflows and implicitly documents 
         the nature of the data being used.
       </p>
-    </section>
+    </div>
   </main>
   <!--End Main Page Content-->    
 </body>
