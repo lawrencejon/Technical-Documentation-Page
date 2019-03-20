@@ -27,19 +27,19 @@
       <header>The Basics</header>
       <p>Swift is a new programming language for iOS, macOS, watchOS, and tvOS app development. Nonetheless, many parts of Swift will be familiar from your experience of developing in C and Objective-C.
         
-        Swift provides its own versions of all fundamental C and Objective-C types, including <code>Int</code> for integers, <code>Double</code> and <code>Float</code> for floating-point values, <code>Bool</code> for Boolean values, and <code>String</code> for textual data. Swift also provides powerful versions of the three primary collection types, <code>Array</code>, <code>Set</code>, and <code>Dictionary</code>, as described in Collection Types.
+        Swift provides its own versions of all fundamental C and Objective-C types, including <i>Int</i> for integers, <i>Double</i> and <i>Float</i> for floating-point values, <i>Bool</i> for Boolean values, and <i>String</i>> for textual data. Swift also provides powerful versions of the three primary collection types, <i>Array</i>, <i>Set</i>, and <i>Dictionary</i>, as described in Collection Types.
         
         Like C, Swift uses variables to store and refer to values by an identifying name. Swift also makes extensive use of variables whose values can’t be changed. These are known as constants, and are much more powerful than constants in C. Constants are used throughout Swift to make code safer and clearer in intent when you work with values that don’t need to change.
         
         In addition to familiar types, Swift introduces advanced types not found in Objective-C, such as tuples. Tuples enable you to create and pass around groupings of values. You can use a tuple to return multiple values from a function as a single compound value.
         
-        Swift also introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”. Using optionals is similar to using <code>nil</code> with pointers in Objective-C, but they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointers in Objective-C, they’re at the heart of many of Swift’s most powerful features.
+        Swift also introduces optional types, which handle the absence of a value. Optionals say either “there is a value, and it equals x” or “there isn’t a value at all”. Using optionals is similar to using <i>nil</i> with pointers in Objective-C, but they work for any type, not just classes. Not only are optionals safer and more expressive than nil pointers in Objective-C, they’re at the heart of many of Swift’s most powerful features.
         
         Swift is a type-safe language, which means the language helps you to be clear about the types of values your code can work with. If part of your code requires a String, type safety prevents you from passing it an Int by mistake. Likewise, type safety prevents you from accidentally passing an optional String to a piece of code that requires a non-optional String. Type safety helps you catch and fix errors as early as possible in the development process.</p>
     </div>
     <div id="Constants_and_Variables" class="main-div">
       <header>Constants and Variables</header>
-      <p>Constants and variables associate a name (such as <code>maximumNumberOfLoginAttempts</code> or <code>welcomeMessage</code>) with a value of a particular type (such as the number 10 or the string "Hello"). The value of a constant can’t be changed once it’s set, whereas a variable can be set to a different value in the future.</p>
+      <p>Constants and variables associate a name (such as <br> <br><code>maximumNumberOfLoginAttempts</code><br> <br> or <br> <br><code>welcomeMessage</code><br><br>) with a value of a particular type (such as the number 10 or the string "Hello"). The value of a constant can’t be changed once it’s set, whereas a variable can be set to a different value in the future.</p>
     </div>
     <div id="Comments" class="main-div">
       <header>Comments</header>
@@ -47,18 +47,18 @@
         
         Comments in Swift are very similar to comments in C. Single-line comments begin with two forward-slashes (//):<br><br>
         
-              <code>// This is a comment.</code><br><br>
+              <br><code>// This is a comment.</code><br><br><br>
         
               Multiline comments start with a forward-slash followed by an asterisk (/*) and end with an asterisk followed by a forward-slash (*/):<br><br>
         
-            <code>/* This is also a comment<br>
-              but is written over multiple lines. */</code><br><br>
+            <br><code>/* This is also a comment<br>
+              but is written over multiple lines. */</code><br><br><br>
         
         Unlike multiline comments in C, multiline comments in Swift can be nested inside other multiline comments. You write nested comments by starting a multiline comment block and then starting a second multiline comment within the first block. The second block is then closed, followed by the first block: <br><br>
         
-            <code>/* This is the start of the first multiline comment.</code><br>
-              <code>/* This is the second, nested multiline comment. */</code><br>
-              <code>This is the end of the first multiline comment. */</code><br><br>
+            <br><code>/* This is the start of the first multiline comment.<br>
+              <br>/* This is the second, nested multiline comment. */<br><br>
+              This is the end of the first multiline comment. */</code><br><br><br>
         
         Nested multiline comments enable you to comment out large blocks of code quickly and easily, even if the code already contains multiline comments.</p>
     </div>
@@ -113,7 +113,7 @@
       <header>Type Safety</header>
       <p>
         Swift is a type-safe language. A type safe language encourages you to be clear about the types of values your code can work with. If 
-        part of your code requires a <code>String</code>, you can’t pass it an <code>Int</code> by mistake.Because Swift is type safe, it 
+        part of your code requires a <i>String</i>, you can’t pass it an <i>Int</i> by mistake.Because Swift is type safe, it 
         performs type checks when compiling your code and flags any mismatched types as errors. This enables you to catch and fix errors as 
         early as possible in the development process. Type-checking helps you avoid errors when you’re working with different types of 
         values. However, this doesn’t mean that you have to specify the type of every constant and variable that you declare. If you don’t 
