@@ -42,8 +42,9 @@ code {
   background-color: black;
   padding: 10px;
   border-radius: 4%;
-  width: 50%;
+  width: 60%;
   margin-left: 2%;
+  margin-bottom: 3%;
 }
 @media (max-width: 822px) {
   #navbar {
